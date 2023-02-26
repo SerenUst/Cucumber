@@ -1,5 +1,6 @@
 @parametre
-Feature:
+Feature: arama_feature
+
 
   Background: googlea_git
     Given kullanici google gider
@@ -29,4 +30,3 @@ Feature:
     Then  Then sonuclarin "skateboard" icerdigini dogrula
     Then close the application
       #    "veri"  -> feature file i parametrize etmek için kullanılır.
-      #
