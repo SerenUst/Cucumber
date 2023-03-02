@@ -5,16 +5,15 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {
-                "pretty",
+                "pretty",//raporlarin daha ikunakli olmasi icin
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml"
         },
         monochrome = true,//raporlarin consoleda okunakli sekilde cikmasi icin
-
         features = "./src/test/resources/features",//features folder path
-        glue = "stepdefinitions",   //stepdefinitions path
-        tags = "@personel_olusturma",
+        glue = {"stepdefinitions","hooks"},   //stepdefinitions path
+        tags = "@data_tables",
         dryRun = false
 )
 public class Runner {
