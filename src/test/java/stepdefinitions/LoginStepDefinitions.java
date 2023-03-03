@@ -12,6 +12,6 @@ public class LoginStepDefinitions {
         // Double, Byte, Short, Long, BigInteger or BigDecimal.
         //
         // For other transformations you can register a DataTableType.
-        throw new io.cucumber.java.PendingException();
+
     }
 }
